@@ -45,7 +45,7 @@ int main(){
     isFind = false;
   }
 
-  vector<int> ave;
+  vector<double> ave;
   for(int j = 0; j < vh.size(); j++){
     vh[j].build_heap();
     int sum = 0;
@@ -60,7 +60,7 @@ int main(){
     ave.push_back(sum/k);
   }
 
-  int max = ave[0];
+  double max = ave[0];
   int maxindex = 0;
   for(int h = 0; h < ave.size(); h++){
     if(h == 0) continue;
